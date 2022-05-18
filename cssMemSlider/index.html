@@ -10,35 +10,52 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="slider fade">
-        <img src="./images/img1.jpg" alt="image 1" style="width: 100%" />
+    <div class="wrapper">
+      <input class="inputs" type="radio" name="point" id="slide1" checked="" />
+      <input class="inputs" type="radio" name="point" id="slide2" />
+      <input class="inputs" type="radio" name="point" id="slide3" />
+      <input class="inputs" type="radio" name="point" id="slide4" />
+      <input class="inputs" type="radio" name="point" id="slide5" />
+
+      <ul class="slider">
+        <li class="slide slider__slide slide1"></li>
+        <li class="slide slider__slide slide2"></li>
+        <li class="slide slider__slide slide3"></li>
+        <li class="slide slider__slide slide4"></li>
+        <li class="slide slider__slide slide5"></li>
+      </ul>
+
+      <div class="controls">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+        <label for="slide5"></label>
       </div>
-      <div class="slider fade">
-        <img src="./images/img2.jpg" alt="image 2" style="width: 100%" />
-      </div>
-      <div class="slider fade">
-        <img src="./images/img3.jpg" alt="image 3" style="width: 100%" />
-      </div>
-      <div class="slider fade">
-        <img src="./images/img4.jpg" alt="image 3" style="width: 100%" />
-      </div>
-      <div class="slider fade">
-        <img src="./images/img5.jpg" alt="image 3" style="width: 100%" />
+
+      <div class="slide-caption">
+        <ul class="caption-wrapper">
+          <li class="caption">
+            <p class="caption__content">Magnificient scenery of the nature</p>
+          </li>
+          <li class="caption">
+            <p class="caption__content">Tree above the stones</p>
+          </li>
+          <li class="caption">
+            <p class="caption__content">Lake view between mountains</p>
+          </li>
+          <li class="caption">
+            <p class="caption__content">
+              Beautiful moment of sunset in the landscape
+            </p>
+          </li>
+          <li class="caption">
+            <p class="caption__content">
+              Taking picture from above the mountains
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
-
-    <div class="navigation-container">
-      <div class="content"></div>
-      <div class="slider-dots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-      </div>
-    </div>
-
-    <script src="./script.js"></script>
   </body>
 </html>
