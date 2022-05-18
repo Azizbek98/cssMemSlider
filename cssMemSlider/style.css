@@ -41,7 +41,6 @@ ul {
   flex: 0 0 100%;
   width: inherit;
   height: inherit;
-  position: relative;
   border-radius: 10px;
 }
 
@@ -75,7 +74,6 @@ ul {
   height: 8px;
   margin: 5px;
   padding: 7px;
-  position: relative;
   width: 8px;
   border-radius: 50%;
   transition: background ease-in-out 0.3s;
